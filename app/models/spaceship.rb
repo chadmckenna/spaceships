@@ -1,6 +1,8 @@
 class Spaceship < ActiveRecord::Base
   attr_accessible :name, :ship_class, :purpose, :weapons, :number_of_crew_members, :flight_plans, :photo
   
+  validates_presence_of :name, :photo
+  
   has_attached_file :photo, 
                     :styles => {
                       :mini => "40x40>",

@@ -7,17 +7,17 @@
     %th Ship Class
     %th Purpose
     %th Weapons
-    %th Number of crew members
+    %th # of Crew
     %th Flight plans
   - for spaceship in @spaceships
     %tr{:class => cycle('even', 'odd') }
       %td= image_tag spaceship.photo.url(:mini)
-      %td= h truncate(spaceship.name, 40, "...")
-      %td= h truncate(spaceship.ship_class, 40, "...")
-      %td= h truncate(spaceship.purpose, 40, "...")
-      %td= h truncate(spaceship.weapons, 40, "...")
+      %td= h truncate(spaceship.name, 20, "...")
+      %td= h truncate(spaceship.ship_class, 20, "...")
+      %td= h truncate(spaceship.purpose, 20, "...")
+      %td= h truncate(spaceship.weapons, 20, "...")
       %td= h spaceship.number_of_crew_members
-      %td= h truncate(spaceship.flight_plans, 40, "...")
+      %td= h truncate(spaceship.flight_plans, 20, "...")
       %td= link_to 'Show', spaceship
       -#%td= link_to 'Edit', edit_spaceship_path(spaceship)
       -#%td= link_to 'Destroy', spaceship, :confirm => 'Are you sure?', :method => :delete
