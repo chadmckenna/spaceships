@@ -1373,3 +1373,25 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
 Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 02:21:02) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/spaceships]

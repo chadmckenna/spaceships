@@ -12,32 +12,19 @@ GEM
       activesupport (= 2.3.11)
     activesupport (2.3.11)
     annotate (2.4.0)
-    authlogic (2.1.6)
-      activesupport
     aws-s3 (0.6.2)
       builder
       mime-types
       xml-simple
     builder (3.0.0)
-    chunky_png (1.2.0)
     columnize (0.3.2)
-    compass (0.11.1)
-      chunky_png (~> 1.1)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
     configuration (1.2.0)
-    daemons (1.0.10)
-    declarative_authorization (0.5.2)
-    delayed_job (2.0.7)
-      activesupport (~> 2.0)
-      daemons (= 1.0.10)
     faker (0.9.5)
       i18n (~> 0.4)
     formtastic (1.2.4)
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
       i18n (~> 0.4)
-    fssm (0.2.7)
     haml (3.1.2)
     haml_scaffold (1.1.0)
       haml (>= 2.0.6)
@@ -93,11 +80,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  authlogic
   aws-s3
-  compass (>= 0.10.6)
-  declarative_authorization
-  delayed_job (~> 2.0.4)
   faker
   formtastic
   haml
