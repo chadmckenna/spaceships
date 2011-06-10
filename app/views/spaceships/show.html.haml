@@ -1,0 +1,27 @@
+- title "Spaceship"
+
+%p
+  %strong Name:
+  =h @spaceship.name
+%p
+  %strong Class:
+  =h @spaceship.class
+%p
+  %strong Purpose:
+  =h @spaceship.purpose
+%p
+  %strong Weapons:
+  =h @spaceship.weapons
+%p
+  %strong Number Of Crew Members:
+  =h @spaceship.number_of_crew_members
+%p
+  %strong Flight Plans:
+  =h @spaceship.flight_plans
+
+%p
+  = link_to "Edit", edit_spaceship_path(@spaceship)
+  |
+  = link_to "Destroy", @spaceship, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", spaceships_path

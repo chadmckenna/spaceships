@@ -1,0 +1,28 @@
+- form_for @spaceship do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name
+  %p
+    = f.label :class
+    %br
+    = f.text_field :class
+  %p
+    = f.label :purpose
+    %br
+    = f.text_field :purpose
+  %p
+    = f.label :weapons
+    %br
+    = f.text_field :weapons
+  %p
+    = f.label :number_of_crew_members
+    %br
+    = f.text_field :number_of_crew_members
+  %p
+    = f.label :flight_plans
+    %br
+    = f.text_field :flight_plans
+  %p
+    = f.submit

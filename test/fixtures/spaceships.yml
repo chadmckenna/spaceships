@@ -1,0 +1,15 @@
+one:
+  name: MyString
+  class: MyString
+  purpose: MyString
+  weapons: MyString
+  number_of_crew_members: 1
+  flight_plans: MyString
+
+two:
+  name: MyString
+  class: MyString
+  purpose: MyString
+  weapons: MyString
+  number_of_crew_members: 1
+  flight_plans: MyString
