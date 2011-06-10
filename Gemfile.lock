@@ -17,6 +17,7 @@ GEM
       mime-types
       xml-simple
     builder (3.0.0)
+    cocaine (0.1.0)
     columnize (0.3.2)
     configuration (1.2.0)
     faker (0.9.5)
@@ -81,6 +82,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   aws-s3
+  cocaine
   faker
   formtastic
   haml
