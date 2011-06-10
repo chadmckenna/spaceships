@@ -1,11 +1,13 @@
-- title "Spaceship"
+- title "SpaceShip"
 
+%p
+  = image_tag @spaceship.photo.url(:thumb)
 %p
   %strong Name:
   =h @spaceship.name
 %p
   %strong Class:
-  =h @spaceship.class
+  =h @spaceship.ship_class
 %p
   %strong Purpose:
   =h @spaceship.purpose
@@ -20,8 +22,7 @@
   =h @spaceship.flight_plans
 
 %p
-  = link_to "Edit", edit_spaceship_path(@spaceship)
-  |
-  = link_to "Destroy", @spaceship, :confirm => 'Are you sure?', :method => :delete
-  |
-  = link_to "View All", spaceships_path
+  .nav
+    = link_to "View All SpaceShips", spaceships_path
+
+.clear

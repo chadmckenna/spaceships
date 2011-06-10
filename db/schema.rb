@@ -13,7 +13,7 @@ ActiveRecord::Schema.define(:version => 20110610062653) do
 
   create_table "spaceships", :force => true do |t|
     t.string   "name"
-    t.string   "class"
+    t.string   "ship_class"
     t.string   "purpose"
     t.string   "weapons"
     t.integer  "number_of_crew_members"

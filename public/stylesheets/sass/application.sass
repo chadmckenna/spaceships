@@ -2,14 +2,30 @@ $primary_color: #4B7399
 
 body
   background-color: $primary_color
-  font
-    family: Verdana, Helvetica, Arial
-    size: 14px
+  font-family: 'Droid Sans Mono', serif
+  font-size: .8em
 
 a
   color: #0000FF
   img
-    :border none
+    border: none
+
+img
+  float: left
+  margin: 0 10px 10px 0
+
+table
+  width: 100%
+  padding: 10px
+  th
+    text-align: left
+  td
+    padding: 3px
+  tr
+    .even
+      background: #999
+    .odd
+      background: #36f
 
 .clear
   clear: both
@@ -17,12 +33,30 @@ a
   overflow: hidden
 
 #container
-  width: 75%
+  width: 85%
   margin: 0 auto
   background: #fff
-  padding: 20px 40px
+  padding: 20px
   border: solid 1px black
   margin-top: 20px
+  
+  .nav
+    float: right
+    font-size: 1.1em
+ 
+  .title
+    font-family: 'Cabin Sketch', serif
+    font-size: 1.8em
+    float: right
+    h1
+      color: red
+      margin: 0 0 10px 0
+      padding: 0
+      a
+        color: red
+        text-decoration: none
+        &hover
+          color: green
 
 #navbar
   float: right

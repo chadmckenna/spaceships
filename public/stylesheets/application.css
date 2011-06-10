@@ -1,13 +1,28 @@
 body {
-  background-color: #4b7399; }
-  body font {
-    family: Verdana, Helvetica, Arial;
-    size: 14px; }
+  background-color: #4b7399;
+  font-family: "Droid Sans Mono", serif;
+  font-size: 0.8em; }
 
 a {
   color: blue; }
   a img {
     border: none; }
+
+img {
+  float: left;
+  margin: 0 10px 10px 0; }
+
+table {
+  width: 100%;
+  padding: 10px; }
+  table th {
+    text-align: left; }
+  table td {
+    padding: 3px; }
+  table tr .even {
+    background: #999999; }
+  table tr .odd {
+    background: #3366ff; }
 
 .clear {
   clear: both;
@@ -15,12 +30,28 @@ a {
   overflow: hidden; }
 
 #container {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   background: white;
-  padding: 20px 40px;
+  padding: 20px;
   border: solid 1px black;
   margin-top: 20px; }
+  #container .nav {
+    float: right;
+    font-size: 1.1em; }
+  #container .title {
+    font-family: "Cabin Sketch", serif;
+    font-size: 1.8em;
+    float: right; }
+    #container .title h1 {
+      color: red;
+      margin: 0 0 10px 0;
+      padding: 0; }
+      #container .title h1 a {
+        color: red;
+        text-decoration: none; }
+        #container .title h1 ahover {
+          color: green; }
 
 #navbar {
   float: right; }

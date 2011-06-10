@@ -1,28 +1,32 @@
-- form_for @spaceship do |f|
+- form_for @spaceship,  :html => { :multipart => true } do |f|
   = f.error_messages
   %p
     = f.label :name
     %br
-    = f.text_field :name
+    = f.text_field :name, :size => 50
   %p
-    = f.label :class
+    = f.label :ship_class
     %br
-    = f.text_field :class
+    = f.text_field :ship_class, :size => 50
   %p
     = f.label :purpose
     %br
-    = f.text_field :purpose
+    = f.text_field :purpose, :size => 50
   %p
     = f.label :weapons
     %br
-    = f.text_field :weapons
+    = f.text_field :weapons, :size => 50
   %p
     = f.label :number_of_crew_members
     %br
-    = f.text_field :number_of_crew_members
+    = f.text_field :number_of_crew_members, :size => 5
   %p
     = f.label :flight_plans
     %br
-    = f.text_field :flight_plans
+    = f.text_field :flight_plans, :size => 50
+  %p
+    Ship photo
+    %br
+    = f.file_field :photo
   %p
     = f.submit

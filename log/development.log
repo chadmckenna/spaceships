@@ -170,3 +170,1206 @@ ActionView::MissingTemplate (Missing template spaceships/index.erb in view path 
   /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 00:47:37) [GET]
+  [4;36;1mSpaceship Load (0.9ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 00:47:45) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+
+ActionView::TemplateError (undefined method `generated_methods' for nil:NilClass) on line #2 of app/views/spaceships/_form.html.haml:
+1: - form_for @spaceship do |f|
+2:   = f.error_messages
+3:   %p
+4:     = f.label :name
+5:     %br
+
+    app/views/spaceships/_form.html.haml:2:in `_run_haml_app47views47spaceships47_form46html46haml_locals_form_object'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:241:in `call'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:241:in `form_for'
+    haml (3.1.2) lib/haml/helpers.rb:591:in `call'
+    haml (3.1.2) lib/haml/helpers.rb:591:in `haml_bind_proc'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:247:in `form_for'
+    app/views/spaceships/_form.html.haml:1:in `_run_haml_app47views47spaceships47_form46html46haml_locals_form_object'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.1.2) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/spaceships/new.html.haml:3:in `_run_haml_app47views47spaceships47new46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 00:50:48) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+
+ActionView::TemplateError (undefined method `generated_methods' for nil:NilClass) on line #2 of app/views/spaceships/_form.html.haml:
+1: - form_for @spaceship,  :html => { :multipart => true } do |f|
+2:   = f.error_messages
+3:   %p
+4:     = f.label :name
+5:     %br
+
+    app/views/spaceships/_form.html.haml:2:in `_run_haml_app47views47spaceships47_form46html46haml_locals_form_object'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:241:in `call'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:241:in `form_for'
+    haml (3.1.2) lib/haml/helpers.rb:591:in `call'
+    haml (3.1.2) lib/haml/helpers.rb:591:in `haml_bind_proc'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:247:in `form_for'
+    app/views/spaceships/_form.html.haml:1:in `_run_haml_app47views47spaceships47_form46html46haml_locals_form_object'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.1.2) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/spaceships/new.html.haml:3:in `_run_haml_app47views47spaceships47new46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (142.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 00:50:49) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+
+ActionView::TemplateError (undefined method `generated_methods' for nil:NilClass) on line #2 of app/views/spaceships/_form.html.haml:
+1: - form_for @spaceship,  :html => { :multipart => true } do |f|
+2:   = f.error_messages
+3:   %p
+4:     = f.label :name
+5:     %br
+
+    app/views/spaceships/_form.html.haml:2:in `_run_haml_app47views47spaceships47_form46html46haml_locals_form_object'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:241:in `call'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:241:in `form_for'
+    haml (3.1.2) lib/haml/helpers.rb:591:in `call'
+    haml (3.1.2) lib/haml/helpers.rb:591:in `haml_bind_proc'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:247:in `form_for'
+    app/views/spaceships/_form.html.haml:1:in `_run_haml_app47views47spaceships47_form46html46haml_locals_form_object'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.1.2) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/spaceships/new.html.haml:3:in `_run_haml_app47views47spaceships47new46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateSpaceships (20110610062557)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "spaceships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "ship_class" varchar(255), "purpose" varchar(255), "weapons" varchar(255), "number_of_crew_members" integer, "flight_plans" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110610062557')[0m
+Migrating to AddAttachmentsPhotoToSpaceship (20110610062653)
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "spaceships" ADD "photo_file_name" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mALTER TABLE "spaceships" ADD "photo_content_type" varchar(255)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mALTER TABLE "spaceships" ADD "photo_file_size" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mALTER TABLE "spaceships" ADD "photo_updated_at" datetime[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110610062653')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("spaceships")[0m
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 00:58:01) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (9.7ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 00:58:46) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (16.4ms)
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#create (for 127.0.0.1 at 2011-06-10 00:59:47) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"fdpFNCb63iE3j1ZufbQ0kPDSvhSFqfQfLlzT8RsJsok=", "spaceship"=>{"photo"=>#<File:/var/folders/Si/SiKC2zZfH5G1lK5kwN4cg++++z6/-Tmp-/RackMultipart20110610-16540-98p55o-0>, "name"=>"Star Destroyer", "ship_class"=>"Destroyer", "weapons"=>"MANY!", "number_of_crew_members"=>"MANY!", "flight_plans"=>"Attack the rebel scum!", "purpose"=>"To DESTROY!"}}
+WARNING: Can't mass-assign these protected attributes: ship_class
+  [4;35;1mSpaceship Create (0.6ms)[0m   [0mINSERT INTO "spaceships" ("name", "ship_class", "created_at", "photo_file_size", "weapons", "updated_at", "photo_file_name", "number_of_crew_members", "photo_content_type", "flight_plans", "photo_updated_at", "purpose") VALUES('Star Destroyer', NULL, '2011-06-10 06:59:52', 50198, 'MANY!', '2011-06-10 06:59:52', 'StarDestroyer.jpg', 0, 'image/jpeg', 'Attack the rebel scum!', '2011-06-10 06:59:51', 'To DESTROY!')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/1/medium.jpg
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/1/original.jpg
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/1/thumb.jpg
+Redirected to http://localhost:3000/spaceships/1
+Completed in 6528ms (DB: 1) | 302 Found [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 00:59:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:00:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSpaceship Load (0.2ms)[0m   [0mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:00:17) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:00:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSpaceship Load (0.2ms)[0m   [0mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:03:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#edit (for 127.0.0.1 at 2011-06-10 01:03:08) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/spaceships
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/spaceships/1/edit]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:03:08) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 105ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:03:55) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:04:05) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:04:30) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:04:38) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:04:53) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 99ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:05:47) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:05:56) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:06:26) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:06:46) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:08:24) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 117ms (View: 111, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:08:46) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:09:50) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:10:01) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:10:07) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:14:19) [GET]
+  [4;36;1mSpaceship Load (0.6ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 138ms (View: 18, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:14:36) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:14:41) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:14:42) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:15:03) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:15:44) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:16:07) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 100ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:16:08) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:16:36) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:17:04) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:17:05) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:17:30) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:18:05) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:18:20) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:18:37) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 102ms (View: 5, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:20:47) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:20:54) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:21:10) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:21:38) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:21:44) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:22:42) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:25:03) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %tr and nested within it.) on line #13 of app/views/spaceships/index.html.haml:
+10:     %th Flight plans
+11:   - for spaceship in @spaceships
+12:     %tr=cycle('gray', 'blue')
+13:       %td= h spaceship.name
+14:       %td= h spaceship.class
+15:       %td= h spaceship.purpose
+16:       %td= h spaceship.weapons
+
+    app/views/spaceships/index.html.haml:13
+    haml (3.1.2) lib/haml/parser.rb:341:in `tag'
+    haml (3.1.2) lib/haml/parser.rb:186:in `process_line'
+    haml (3.1.2) lib/haml/parser.rb:148:in `parse'
+    haml (3.1.2) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.2) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.2) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.2) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:26:10) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (undefined local variable or method `‘even’' for #<ActionView::Base:0x1031f9b78>) on line #12 of app/views/spaceships/index.html.haml:
+9:     %th Number of crew members
+10:     %th Flight plans
+11:   - for spaceship in @spaceships
+12:     %tr{:class => cycle(‘even’, ‘odd’) }
+13:       %td= h spaceship.name
+14:       %td= h spaceship.class
+15:       %td= h spaceship.purpose
+
+    app/views/spaceships/index.html.haml:12:in `_run_haml_app47views47spaceships47index46html46haml'
+    app/views/spaceships/index.html.haml:11:in `each'
+    app/views/spaceships/index.html.haml:11:in `_run_haml_app47views47spaceships47index46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:26:44) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:27:14) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:27:34) [GET]
+  [4;35;1mSpaceship Load (0.4ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:27:54) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:27:57) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 102ms (View: 6, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:28:07) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:28:39) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:30:19) [GET]
+  [4;36;1mSpaceship Load (0.4ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:30:45) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (8.9ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#create (for 127.0.0.1 at 2011-06-10 01:31:48) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"fdpFNCb63iE3j1ZufbQ0kPDSvhSFqfQfLlzT8RsJsok=", "spaceship"=>{"photo"=>#<File:/var/folders/Si/SiKC2zZfH5G1lK5kwN4cg++++z6/-Tmp-/RackMultipart20110610-16540-kyygr2-0>, "name"=>"Tie Fighter", "ship_class"=>"Fighter", "weapons"=>"Ion Canons", "number_of_crew_members"=>"1", "flight_plans"=>"To fight.", "purpose"=>"To DESTROY!"}}
+WARNING: Can't mass-assign these protected attributes: ship_class
+  [4;35;1mSpaceship Create (0.5ms)[0m   [0mINSERT INTO "spaceships" ("name", "ship_class", "created_at", "photo_file_size", "weapons", "updated_at", "photo_file_name", "number_of_crew_members", "photo_content_type", "flight_plans", "photo_updated_at", "purpose") VALUES('Tie Fighter', NULL, '2011-06-10 07:31:49', 70387, 'Ion Canons', '2011-06-10 07:31:49', 'Tiefighterfull.jpg', 1, 'image/jpeg', 'To fight.', '2011-06-10 07:31:48', 'To DESTROY!')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/2/medium.jpg
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/2/original.jpg
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/2/thumb.jpg
+Redirected to http://localhost:3000/spaceships/2
+Completed in 2724ms (DB: 1) | 302 Found [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:31:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships/2]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:31:55) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:32:47) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:33:01) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:33:22) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:33:51) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:34:07) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:34:21) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:34:53) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:35:08) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:35:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSpaceship Load (0.3ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 100ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships/2]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:36:19) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:36:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:36:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSpaceship Load (0.2ms)[0m   [0mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:37:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:38:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSpaceship Load (0.2ms)[0m   [0mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 110ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:39:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:39:56) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:39:59) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (9.0ms)
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:40:03) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:42:18) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 112ms (View: 107, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:42:50) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:43:10) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (8.7ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#create (for 127.0.0.1 at 2011-06-10 01:44:12) [POST]
+  Parameters: {"commit"=>"Save changes", "authenticity_token"=>"fdpFNCb63iE3j1ZufbQ0kPDSvhSFqfQfLlzT8RsJsok=", "spaceship"=>{"photo"=>#<File:/var/folders/Si/SiKC2zZfH5G1lK5kwN4cg++++z6/-Tmp-/RackMultipart20110610-16540-bj5i8t-0>, "name"=>"Tie Interceptor", "ship_class"=>"Interceptor", "weapons"=>"Twin Ion Canons", "number_of_crew_members"=>"1", "flight_plans"=>"Intercept all rebel scum.", "purpose"=>"To Intercept"}}
+WARNING: Can't mass-assign these protected attributes: ship_class
+  [4;35;1mSpaceship Create (0.6ms)[0m   [0mINSERT INTO "spaceships" ("name", "ship_class", "created_at", "photo_file_size", "weapons", "updated_at", "photo_file_name", "number_of_crew_members", "photo_content_type", "flight_plans", "photo_updated_at", "purpose") VALUES('Tie Interceptor', NULL, '2011-06-10 07:44:12', 25947, 'Twin Ion Canons', '2011-06-10 07:44:12', 'interceptor.jpg', 1, 'image/jpeg', 'Intercept all rebel scum.', '2011-06-10 07:44:12', 'To Intercept')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/3/medium.jpg
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/3/original.jpg
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/3/mini.jpg
+[paperclip] saving /Users/cmckenna/Documents/spaceships/public/assets/spaceships/photos/3/thumb.jpg
+Redirected to http://localhost:3000/spaceships/3
+Completed in 1500ms (DB: 1) | 302 Found [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:44:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for #<String:0x1033fb2a0>) on line #4 of app/views/spaceships/show.html.haml:
+1: - title "Spaceship"
+2: 
+3: %p
+4:   = link_to image_tag @spaceship.photo.url(:thumb), @spaceship.photo.url(:medium)
+5: %p
+6:   %strong Name:
+7:   =h @spaceship.name
+
+    app/views/spaceships/show.html.haml:4:in `_run_haml_app47views47spaceships47show46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:44:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSpaceship Load (0.2ms)[0m   [0mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/spaceships/3]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:45:02) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:45:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSpaceship Load (0.2ms)[0m   [0mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/spaceships/3]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:45:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships/3]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:46:06) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:46:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships/3]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:46:14) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:46:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/spaceships/2]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:46:46) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:47:39) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:48:17) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:48:37) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:48:44) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:49:13) [GET]
+  [4;36;1mSpaceship Load (0.6ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 108ms (View: 11, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:49:27) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:49:37) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (8.7ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:49:51) [GET]
+  [4;36;1mSpaceship Load (0.6ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 104ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:49:53) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (9.5ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:49:54) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:50:15) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:50:38) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:50:40) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (9.1ms)
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:50:43) [GET]
+  [4;36;1mSpaceship Load (0.6ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:51:06) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:52:46) [GET]
+  [4;36;1mSpaceship Load (0.6ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:53:34) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 31ms (View: 24, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:54:03) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:54:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSpaceship Load (0.3ms)[0m   [0mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 01:54:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships/1]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:54:41) [GET]
+  [4;35;1mSpaceship Load (0.5ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:54:43) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (9.7ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:56:04) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (16.6ms)
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:56:20) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (16.6ms)
+Completed in 114ms (View: 109, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:56:39) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (16.4ms)
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:57:04) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (106.0ms)
+Completed in 117ms (View: 111, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:57:11) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (16.5ms)
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:57:36) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (103.8ms)
+Completed in 114ms (View: 109, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:57:43) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (16.3ms)
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#new (for 127.0.0.1 at 2011-06-10 01:57:47) [GET]
+Rendering template within layouts/application
+Rendering spaceships/new
+Rendered spaceships/_form (126.4ms)
+Completed in 138ms (View: 132, DB: 0) | 200 OK [http://localhost/spaceships/new]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 01:58:12) [GET]
+  [4;36;1mSpaceship Load (0.5ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/spaceships]

@@ -22,23 +22,25 @@ class SpaceshipsController < ApplicationController
   end
 
   def edit
-    @spaceship = Spaceship.find(params[:id])
+    #@spaceship = Spaceship.find(params[:id])
+    flash[:error] = "You cannot edit a ship at this time."
+    redirect_to spaceships_path
   end
 
-  def update
-    @spaceship = Spaceship.find(params[:id])
-    if @spaceship.update_attributes(params[:spaceship])
-      flash[:notice] = "Successfully updated spaceship."
-      redirect_to @spaceship
-    else
-      render :action => 'edit'
-    end
-  end
+  #def update
+  #  @spaceship = Spaceship.find(params[:id])
+  #  if @spaceship.update_attributes(params[:spaceship])
+  #    flash[:notice] = "Successfully updated spaceship."
+  #    redirect_to @spaceship
+  #  else
+  #    render :action => 'edit'
+  #  end
+  #end
 
-  def destroy
-    @spaceship = Spaceship.find(params[:id])
-    @spaceship.destroy
-    flash[:notice] = "Successfully destroyed spaceship."
-    redirect_to spaceships_url
-  end
+  #def destroy
+  #  @spaceship = Spaceship.find(params[:id])
+  #  @spaceship.destroy
+  #  flash[:notice] = "Successfully destroyed spaceship."
+  #  redirect_to spaceships_url
+  #end
 end

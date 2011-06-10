@@ -1,23 +1,29 @@
-- title "Spaceships"
+-title "SpaceShips"
 
 %table
   %tr
+    %th
     %th Name
-    %th Class
+    %th Ship Class
     %th Purpose
     %th Weapons
     %th Number of crew members
     %th Flight plans
   - for spaceship in @spaceships
-    %tr
-      %td= h spaceship.name
-      %td= h spaceship.class
-      %td= h spaceship.purpose
-      %td= h spaceship.weapons
+    %tr{:class => cycle('even', 'odd') }
+      %td= image_tag spaceship.photo.url(:mini)
+      %td= h truncate(spaceship.name, 40, "...")
+      %td= h truncate(spaceship.ship_class, 40, "...")
+      %td= h truncate(spaceship.purpose, 40, "...")
+      %td= h truncate(spaceship.weapons, 40, "...")
       %td= h spaceship.number_of_crew_members
-      %td= h spaceship.flight_plans
+      %td= h truncate(spaceship.flight_plans, 40, "...")
       %td= link_to 'Show', spaceship
-      %td= link_to 'Edit', edit_spaceship_path(spaceship)
-      %td= link_to 'Destroy', spaceship, :confirm => 'Are you sure?', :method => :delete
+      -#%td= link_to 'Edit', edit_spaceship_path(spaceship)
+      -#%td= link_to 'Destroy', spaceship, :confirm => 'Are you sure?', :method => :delete
 
-%p= link_to "New Spaceship", new_spaceship_path
+%p
+  .nav
+    = link_to "New SpaceShip", new_spaceship_path
+
+.clear
