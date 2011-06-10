@@ -90,7 +90,7 @@ DEPENDENCIES
   mocha
   nifty-generators
   paper_trail (~> 1)
-  paperclip
+  paperclip (~> 2.3)
   rails (= 2.3.11)
   rcov
   rmagick
