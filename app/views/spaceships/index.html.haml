@@ -11,7 +11,7 @@
     %th Flight plans
   - for spaceship in @spaceships
     %tr{:class => cycle('even', 'odd') }
-      %td= image_tag spaceship.photo.url(:mini)
+      %td= link_to(image_tag(spaceship.photo.url(:mini)), spaceship_path(spaceship))
       %td= h truncate(spaceship.name, 20, "...")
       %td= h truncate(spaceship.ship_class, 20, "...")
       %td= h truncate(spaceship.purpose, 20, "...")

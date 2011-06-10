@@ -1970,3 +1970,308 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
 Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/spaceships]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:34:50) [GET]
+  [4;36;1mSpaceship Load (0.7ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "/spaceships/1":ActiveSupport::SafeBuffer) on line #14 of app/views/spaceships/index.html.haml:
+11:     %th Flight plans
+12:   - for spaceship in @spaceships
+13:     %tr{:class => cycle('even', 'odd') }
+14:       %td= link_to image_tag spaceship.photo.url(:mini), spaceship_path(spaceship)
+15:       %td= h truncate(spaceship.name, 20, "...")
+16:       %td= h truncate(spaceship.ship_class, 20, "...")
+17:       %td= h truncate(spaceship.purpose, 20, "...")
+
+    app/views/spaceships/index.html.haml:14:in `_run_haml_app47views47spaceships47index46html46haml'
+    app/views/spaceships/index.html.haml:12:in `each'
+    app/views/spaceships/index.html.haml:12:in `_run_haml_app47views47spaceships47index46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:35:07) [GET]
+  [4;35;1mSpaceship Load (0.7ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "/spaceships/1":ActiveSupport::SafeBuffer) on line #14 of app/views/spaceships/index.html.haml:
+11:     %th Flight plans
+12:   - for spaceship in @spaceships
+13:     %tr{:class => cycle('even', 'odd') }
+14:       %td= link_to (image_tag spaceship.photo.url(:mini), spaceship_path(spaceship))
+15:       %td= h truncate(spaceship.name, 20, "...")
+16:       %td= h truncate(spaceship.ship_class, 20, "...")
+17:       %td= h truncate(spaceship.purpose, 20, "...")
+
+    app/views/spaceships/index.html.haml:14:in `_run_haml_app47views47spaceships47index46html46haml'
+    app/views/spaceships/index.html.haml:12:in `each'
+    app/views/spaceships/index.html.haml:12:in `_run_haml_app47views47spaceships47index46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:36:59) [GET]
+  [4;36;1mSpaceship Load (0.7ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "/spaceships/1":ActiveSupport::SafeBuffer) on line #14 of app/views/spaceships/index.html.haml:
+11:     %th Flight plans
+12:   - for spaceship in @spaceships
+13:     %tr{:class => cycle('even', 'odd') }
+14:       %td= link_to (image_tag (spaceship.photo.url(:mini)), spaceship_path(spaceship))
+15:       %td= h truncate(spaceship.name, 20, "...")
+16:       %td= h truncate(spaceship.ship_class, 20, "...")
+17:       %td= h truncate(spaceship.purpose, 20, "...")
+
+    app/views/spaceships/index.html.haml:14:in `_run_haml_app47views47spaceships47index46html46haml'
+    app/views/spaceships/index.html.haml:12:in `each'
+    app/views/spaceships/index.html.haml:12:in `_run_haml_app47views47spaceships47index46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (158.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:38:18) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "/spaceships/1":ActiveSupport::SafeBuffer) on line #14 of app/views/spaceships/index.html.haml:
+11:     %th Flight plans
+12:   - for spaceship in @spaceships
+13:     %tr{:class => cycle('even', 'odd') }
+14:       %td= link_to (image_tag (spaceship.photo.url(:mini), spaceship_path(spaceship)))
+15:       %td= h truncate(spaceship.name, 20, "...")
+16:       %td= h truncate(spaceship.ship_class, 20, "...")
+17:       %td= h truncate(spaceship.purpose, 20, "...")
+
+    app/views/spaceships/index.html.haml:14:in `_run_haml_app47views47spaceships47index46html46haml'
+    app/views/spaceships/index.html.haml:12:in `each'
+    app/views/spaceships/index.html.haml:12:in `_run_haml_app47views47spaceships47index46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:38:37) [GET]
+  [4;36;1mSpaceship Load (0.6ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "/spaceships/1":ActiveSupport::SafeBuffer) on line #14 of app/views/spaceships/index.html.haml:
+11:     %th Flight plans
+12:   - for spaceship in @spaceships
+13:     %tr{:class => cycle('even', 'odd') }
+14:       %td= image_tag spaceship.photo.url(:mini), spaceship_path(spaceship)
+15:       %td= h truncate(spaceship.name, 20, "...")
+16:       %td= h truncate(spaceship.ship_class, 20, "...")
+17:       %td= h truncate(spaceship.purpose, 20, "...")
+
+    app/views/spaceships/index.html.haml:14:in `_run_haml_app47views47spaceships47index46html46haml'
+    app/views/spaceships/index.html.haml:12:in `each'
+    app/views/spaceships/index.html.haml:12:in `_run_haml_app47views47spaceships47index46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:38:47) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 151ms (View: 145, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:39:35) [GET]
+  [4;36;1mSpaceship Load (0.6ms)[0m   [0;1mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+
+ActionView::TemplateError (undefined method `link_to_image' for #<ActionView::Base:0x105ca1088>) on line #14 of app/views/spaceships/index.html.haml:
+11:     %th Flight plans
+12:   - for spaceship in @spaceships
+13:     %tr{:class => cycle('even', 'odd') }
+14:       %td= link_to_image spaceship.photo.url(:mini)
+15:       %td= h truncate(spaceship.name, 20, "...")
+16:       %td= h truncate(spaceship.ship_class, 20, "...")
+17:       %td= h truncate(spaceship.purpose, 20, "...")
+
+    app/views/spaceships/index.html.haml:14:in `_run_haml_app47views47spaceships47index46html46haml'
+    app/views/spaceships/index.html.haml:12:in `each'
+    app/views/spaceships/index.html.haml:12:in `_run_haml_app47views47spaceships47index46html46haml'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.2) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    sass (3.1.2) rails/./lib/sass/plugin/rack.rb:54:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:42:13) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 146ms (View: 140, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpaceshipsController#show (for 127.0.0.1 at 2011-06-10 10:42:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSpaceship Load (0.2ms)[0m   [0;1mSELECT * FROM "spaceships" WHERE ("spaceships"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering spaceships/show
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/spaceships/3]
+
+
+Processing SpaceshipsController#index (for 127.0.0.1 at 2011-06-10 10:42:19) [GET]
+  [4;35;1mSpaceship Load (0.6ms)[0m   [0mSELECT * FROM "spaceships" [0m
+Rendering template within layouts/application
+Rendering spaceships/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:15)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:16)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_haml_app47views47spaceships47index46html46haml at /Users/cmckenna/Documents/spaceships/app/views/spaceships/index.html.haml:20)
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/spaceships]
